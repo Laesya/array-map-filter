@@ -20,8 +20,12 @@ En sortie: [
 ]
 
  */
-
 function getStringsLength(strings) {
+  strings = strings.map(function(string){
+  const height = string.length;
+  return `${string} contains ${height} characters`;
+  })  
+  return strings;
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
@@ -30,3 +34,5 @@ function getStringsLength(strings) {
 
 // Ne pas modifier l'export
 module.exports = getStringsLength;
+
+ 
